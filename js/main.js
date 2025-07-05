@@ -102,15 +102,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const menuHTML = `
             <nav class="menu-navigation">
-                <div class="menu-nav-title">🍽️ Ir a Sección</div>
+                <div class="menu-nav-title">🍽️ ¿¿que te apetece??</div>
                 <div class="menu-nav-links">
-                    <a href="#tapas" class="menu-nav-link">🍤 Tapas</a>
-                    <a href="#ensaladas" class="menu-nav-link">🥗 Ensaladas</a>
-                    <a href="#hamburguesas" class="menu-nav-link">🍔 Hamburguesas</a>
-                    <a href="#bocadillos" class="menu-nav-link">🥪 Bocadillos</a>
-                    <a href="#pizzas" class="menu-nav-link">🍕 Pizzas</a>
-                    <a href="#carne-y-pescado" class="menu-nav-link">🥩 Carne y Pescado</a>
-                    <a href="#postres" class="menu-nav-link">🍰 Postres</a>
+                    <a href="#tapas" class="menu-nav-link">🍤 Tapas</a><br>
+                    <a href="#ensaladas" class="menu-nav-link">🥗 Ensaladas</a><br>
+                    <a href="#hamburguesas" class="menu-nav-link">🍔 Hamburguesas</a><br>
+                    <a href="#bocadillos" class="menu-nav-link">🥪 Bocadillos</a><br>
+                    <a href="#pizzas" class="menu-nav-link">🍕 Pizzas</a><br>
+                    <a href="#carne-y-pescado" class="menu-nav-link">🥩 Carne y Pescado</a><br>
+                    <a href="#postres" class="menu-nav-link">🍰 Postres</a><br>
                 </div>
             </nav>
         `;
