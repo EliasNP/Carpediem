@@ -460,3 +460,125 @@ html {
         box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
     }
 }
+
+/* CSS para tooltips que funcionan en móviles y escritorio */
+
+/* Configuración básica del tooltip */
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+
+/* El tooltip en sí */
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(20, 20, 20, 0.95);
+    color: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    white-space: normal;
+    width: 250px;
+    max-width: 90vw;
+    text-align: center;
+    line-height: 1.4;
+    border: 1px solid #d4af37;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    z-index: 1000;
+    
+    /* Inicialmente oculto */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Flecha del tooltip */
+[data-tooltip]::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    border: 6px solid transparent;
+    border-top-color: #d4af37;
+    z-index: 1001;
+    
+    /* Inicialmente oculto */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Mostrar en hover (escritorio) */
+@media (hover: hover) {
+    [data-tooltip]:hover::after,
+    [data-tooltip]:hover::before {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    
+    [data-tooltip]:hover::before {
+        transform: translateX(-50%) translateY(90%);
+    }
+}
+
+/* Mostrar en tap/click (móviles) */
+@media (hover: none) {
+    [data-tooltip].show-tooltip::after,
+    [data-tooltip].show-tooltip::before {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    
+    [data-tooltip].show-tooltip::before {
+        transform: translateX(-50%) translateY(90%);
+    }
+    
+    /* Indicador visual de que es clickeable en móvil */
+    [data-tooltip] {
+        position: relative;
+    }
+    
+    [data-tooltip]::after {
+        bottom: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Ajustes para tooltips que se salen de la pantalla */
+[data-tooltip].tooltip-left::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+[data-tooltip].tooltip-right::after {
+    right: 0;
+    left: auto;
+    transform: translateX(0);
+}
+
+[data-tooltip].tooltip-left::before {
+    left: 20px;
+    transform: translateX(0) translateY(90%);
+}
+
+[data-tooltip].tooltip-right::before {
+    right: 20px;
+    left: auto;
+    transform: translateX(0) translateY(90%);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    [data-tooltip]::after {
+        width: 200px;
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}
