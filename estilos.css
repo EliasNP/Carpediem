@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+}
+
+.menu-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffce00;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+  color: #ffa500;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #444;
+  display: flex;
+  justify-content: space-between;
+}
+
+li em {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.ofertas {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff9800;
+}

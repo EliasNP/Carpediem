@@ -1,430 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carta</title>
-
-  <!-- inclusión de Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-  <!-- Inclusión de CSS propio -->
-  <link href="css/styles.css" rel="stylesheet" />
+  <title>Menú Carpe Diem</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
-  <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="img/logo-restaurantenavbar.png" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          <a class="nav-link" href="carta.html">Carta</a>
-          <a class="nav-link" href="contact.html">Contacto</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <div class="menu-container">
+    <h1>🍴 Carpe Diem</h1>
 
-  <!-- Imagen general -->
-
-  <div><img src="img/menu.jpg" class="img-fluid" alt="Contacto"></div>
-
-  <div class="page-content-box">
-    <div class="contact">
-      <h2>NUESTRA CARTA</h2>
-      <div class="b-example-divider-form"></div>
-
-      <!-- <h3>Buffet libre</h3>
-        <H4>Una extensa selección de especialidades locales e internacionales, expuesta al estilo buffet pero servida
-          por nuestros
-          chefs para garantizar nuestras medidas de seguridad.</H4> -->
-
-    </div>
-  </div>
-  <!-- Menú -->
-
-  <div class="container">
-    <div class="content-box-menu">
-      <h3>Desayunos</h3>
-      <H5>Empieza bien el día con los deliciosos desayunos en nuestra terraza.</H5>
-    </div>
-    <div class="row row-cols-3">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="img/Desayunosvintage.jpg" class="card-img-top" alt="Desayuno Vintage">
-          <div class="card-body">
-            <p class="card-title">Vintage 10.30€</p>
-            <p class="card-text"> Croissant, tostadas, mermelada, mantequilla, mini Nutella, muffin, zumo natural de
-              naranja, café o té.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="img/Desayunosmediterraneo.jpg" class="card-img-top" alt="Mediterraneo">
-          <div class="card-body">
-            <p class="card-title">Mediterráneo 11.30€</p>
-            <p class="card-text"> Tostada con tomate, jamón y queso manchego, tortilla, aceitunas, zumo natural de
-              naranja, café o té.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="img/Desayunoscampero.jpg" class="card-img-top" alt="Campero">
-          <div class="card-body">
-            <p class="card-title">Campero 11.00€</p>
-            <p class="card-text">Bacón, huevo, longaniza tradicional, tostadas, zumo natural de naranja, café o té.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="content-box-menu">
-    <h3>Entrantes</h3>
-
-  </div>
-
-  <table class="table">
-
-    <tbody>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">Papas</td>
-        <td>2.20€</td>
-        <td>Tronco de quesos D.O
-          12.70€</td>
-        <td>12.70€</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">Aceitunas especiales</td>
-        <td>3.70€</td>
-        <td>Carpaccio de pulpo</td>
-        <td>13.80€</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">Lata de berberechos con papas</td>
-        <td>9.40€</td>
-        <td>Gambón al curry</td>
-        <td>13.90€</td>
-
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">Bol de nachos con guacamole</td>
-        <td>7.60€</td>
-        <td>Tabla gourmet</td>
-        <td> 17.50€</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">Boquerones en vinagre</td>
-        <td>7.70€</td>
-        <td>Focaccia</td>
-        <td>14.90€</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">Ensaladilla rusa con "Grassini croccanti"</td>
-        <td>7.90€</td>
-        <td>Flor de alcachofa al tartufo</td>
-        <td>13.80€</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2"> Degustación de tres panes</td>
-        <td> 4.40€</td>
-        <td>Tartar de atún con aguacate</td>
-        <td>14.20€</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">Cazuelita de mejillones con salsa a la vizcaína</td>
-        <td> 9.90€</td>
-        <td>Carpaccio de ternera</td>
-        <td>13.10€</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="content-box-menu">
-    <h3>Ensaladas</h3>
-  </div>
-
-  <table class="table">
-
-    <tbody>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">La bomba. Pan crujiente relleno de tomate de la terreno con salazón y olivada</td>
-        <td>9.90€</td>
-        <td>Capresse. Mozzarella de búfala campana D.O.P, tomate y albahaca fresca con aceto balsámico </td>
-        <td>12.70€</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">Ensalada valenciana. Tomate, ventresca de atún, cebolla y aceitunas negras</td>
-        <td>11.00€</td>
-        <td>Zoodles de calabacín natural. Calabacín, zanahoria, manzana, anacardos, crema de aguacate, cebolla crujiente, sésamo y tomatito cherri</td>
-        <td>13.80€</td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td colspan="2">Ensalada Mandala. Mesclum, tomate cherri, queso, nueces, pasas y fruta natural</td>
-        <td>11.60€</td>
-        <td>Ensalada de algas con gamba. Alga wakame, gambas maceradas, huevas, semillas de chía, pomodoro seco y salsa especial
-        </td>
-        <td>15.30€</td>
-      </tr>
-      </tbody>
-      </table>
-
-      <div class="content-box-menu">
-        <h3>Pizzas</h3>
-    
-      </div>
-
-      <table class="table">
-
-        <tbody>
-          <tr>
-            <th scope="row"></th>
-            <td colspan="2">Margarita. (Tomate, mozzarella y albahaca) </td>
-            <td>8.80€</td>
-            <td>Prosciutto. (Tomate, mozzarella y jamón york)</td>
-            <td>9.40€</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td colspan="2">Reina. (Tomate, mozzarella, jamón york y champiñones)</td>
-            <td>9.40€</td>
-            <td>4 Estaciones. (Tomate, mozzarella, jamón york, salami, alcachofas y champiñones) </td>
-            <td>9.90€</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td colspan="2">Carbonara. (Mozzarella, bacón, cebolla, huevo y nata)</td>
-            <td>10.50€</td>
-            <td>5 Quesos. (Tomate, mozzarella, azul, cheddar, emmental y parmesano)</td>
-            <td>10.50€</td>
-    
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td colspan="2">Vegetariana. (Tomate, mozzarella, cebolla, alcachofa, maíz, champiñones, pimiento y calabacín)</td>
-            <td>10.50€</td>
-            <td>D'Inferno (Tomate, mozzarella, pepperoni y champiñones)</td>
-            <td>10.90€</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td colspan="2">Rúcula. (Tomate, mozzarella, rúcula, grana padano y jamón serrano)</td>
-            <td>7.90€</td>
-            <td>Kebab. (Tomate, mozzarella, carne kebab de pollo y salsa kebab)</td>
-            <td>10.90€</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td colspan="2">BBQ Lovers. (Tomate, mozzarella, carne picada de ternera, bacón y salsa barbacoa)</td>
-            <td>10.90€</td>
-            <td>Aloha (New). Queso crema, guacamole, salmón ahumado, piña braseada y aguacate </td>
-            <td>11.90€</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td colspan="2">Healthy (Tomate fresco, mozzarella fresca, albahaca y flores (con base de carbón vegetal))</td>
-            <td>10.90€</td>
-            <td>Mandala. Gourmet mozzarella, mascarpone, parmesano, trufa, setas fungi y rúcula</td>
-            <td>13.10€</td>
-          </tr>
-          
-          </tr>
-        </tbody>
-      </table>
-    
-      <div class="content-box-menu">
-        <h3>Pastas</h3>
-      </div>
-    
-      <table class="table">
-
-        <tbody>
-          <tr>
-            <th scope="row"></th>
-            <td colspan="2">Bolognesa tradicional</td>
-            <td>10.50€</td>
-            <td>Nuestra carbonara</td>
-            <td>10.50€</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td colspan="2">Pesto (albahaca, grana padano y piñones)</td>
-            <td>9.90€</td>
-            <td>Cuatro quesos D.O</td>
-            <td>12.00€</td>
-          </tr>
-          <tbody>
-          </table>
-
-          <div class="content-box-menu">
-            <h3>Kids</h3>
-          </div>
-        
-          <table class="table">
-    
-            <tbody>
-              <tr>
-                <th scope="row"></th>
-                <td colspan="2">Espaguetti con tomate natural</td>
-                <td>6.60€</td>
-                <td>Animalitos de pasta biológica rellenos de queso con salsa de tomate natural</td>
-                <td>7.70€</td>
-              </tr>
-              <tbody>
-              </table>
-
-              <div class="content-box-menu">
-                <h3>Pescados</h3>
-              </div>
-            
-              <table class="table">
-        
-                <tbody>
-                  <tr>
-                    <th scope="row"></th>
-                    <td colspan="2">Salmón noruego con patata confitada y espencat</td>
-                    <td>14.90€</td>
-                    <td>Bacalao al gratén de allioli con tagliatelle nero di sepia</td>
-                    <td>15.50€</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"></th>
-                    <td colspan="2">Corvina al horno con verdurita de bambú y wakame</td>
-                    <td>16.00€</td>
-                  </tr>
-                  <tbody>
-                  </table>
-                  
-              <div class="content-box-menu">
-                <h3>Carnes</h3>
-              </div>
-            
-              <table class="table">
-        
-                <tbody>
-                  <tr>
-                    <th scope="row"></th>
-                    <td colspan="2">Carrillada de ternera con salsa de boletus</td>
-                    <td>16.00€</td>
-                    <td>Codillo al estilo alemán con patata confitada</td>
-                    <td>14.30€</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"></th>
-                    <td colspan="2">Autentico cochinillo segoviano (2p)</td>                     
-                    <td>49.50€</td>
-                    <td>Lechazo de Aranda del Duero asado (2/3 p)
-                    </td>
-                    <td>49.50€</td>
-                  </tr>
-                  <tbody>
-                  </table>
-    
-                  <div class="content-box-menu">
-                    <h3>Postres</h3>
-                  </div>
-                
-                  <table class="table">
-            
-                    <tbody>
-                      <tr>
-                        <th scope="row"></th>
-                        <td colspan="2">Nuestro tiramisú casero</td>
-                        <td>6.50€</td>
-                        <td>Tarta de galletas y chocolate "Les Dos Llunes"</td>
-                        <td>6.00€</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td colspan="2">Carrot cake</td>                     
-                        <td>6.50€</td>
-                        <td>Cheese cake con mermelada de frutos rojos</td>
-                        <td>6.00€</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td colspan="2">Coulant de chocolate con helado de vainilla </td>                     
-                        <td>6.50€</td>
-                        <td>Coulant de chocolate sin gluten</td>
-                        <td>4.40€</td>
-                      </tr>
-                      <tbody>
-                      </table>
-        
-    
-  <!-- Redes Sociales -->
-
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-      </div>
-      <div class="col">
-        <div class="social-networks">
-          <a href="https://es-es.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
-          <a href="https://twitter.com/?lang=es/" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
-          <a href="https://play.google.com/store/apps/details?id=com.joelapenna.foursquared&hl=es&gl=US"
-            target="_blank"><img src="img/foursquare.png" alt="foursquare"></a>
-
-        </div>
-      </div>
-      <div class="col">
-      </div>
-
-    </div>
-  </div>
-
-  
-  <!-- Footer -->
-
-  <div class="b-example-divider"></div>
-
-
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="carta.html" class="nav-link px-2 text-muted">Carta</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contacto</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Acerda de</a></li>
+    <section>
+      <h2>Tapas</h2>
+      <ul>
+        <li>Bravas - 6,00€</li>
+        <li>Chopitos - 10,00€</li>
+        <li>Calamares Romana - 10,00€</li>
+        <li>Croquetas Jamón o Bacalao - 6,00€</li>
+        <li>Alitas x6 - 6,00€</li>
+        <li>Huevos rotos con Jamón - 6,00€</li>
+        <li>Pincho moruno unidad - 4,00€</li>
+        <li>Patatas fritas - 4,00€</li>
+        <li>Patatas Bacon y queso - 7,00€</li>
+        <li>Patatas con queso - 5,00€</li>
+        <li>Mejillones al vapor - 6,00€</li>
+        <li>Gambas al ajillo - 7,50€</li>
+        <li>Pollo Cajún - 9,00€</li>
+        <li>Boquerones - 12,00€</li>
       </ul>
-      <p class="text-center text-muted">&copy; 2022 Restaurante La Placeta</p>
+    </section>
+
+    <section>
+      <h2>Ensaladas</h2>
+      <ul>
+        <li>Mixta - 5,50€</li>
+        <li>De la casa - 7,50€</li>
+        <li>Carpe Diem - 9,50€</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Hamburguesas</h2>
+      <ul>
+        <li>Solo carne con papas - 5,50€</li>
+        <li>Completa - 7,50€</li>
+        <li>Carpe Diem - 10,00€</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Bocadillos</h2>
+      <ul>
+        <li>Pechuga de pollo - 5,00€</li>
+        <li>Lomo fresco o adobado - 5,00€</li>
+        <li>Salchichas - 5,00€</li>
+        <li>Bacon - 5,00€</li>
+        <li>Ternera - 6,50€</li>
+        <li>Blanco y negro - 6,00€</li>
+        <li>Milanesa pollo - 7,50€</li>
+        <li>Milanesa ternera - 7,50€</li>
+        <li>Calamar romana - 6,00€</li>
+        <li>Spain - 6,00€</li>
+        <li>Serranito - 6,00€</li>
+        <li>Carpe Diem - 10,00€</li>
+        <li>*Suplementos - 0,50€</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pizzas</h2>
+      <ul>
+        <li>4 Quesos - 8,00€</li>
+        <li>Pepperoni - 8,00€</li>
+        <li>Jamón y Queso - 7,00€</li>
+        <li>Barbacoa - 8,00€</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Carne y Pescado</h2>
+      <ul>
+        <li>Salmón plancha - 10,00€</li>
+        <li>Merluza plancha - 10,00€</li>
+        <li>Lomo fresco o Adobado - 7,50€</li>
+        <li>Salchichas - 6,00€</li>
+        <li>Pechuga pollo - 7,50€</li>
+        <li>Ternera - 9,00€</li>
+        <li>Milanesa pollo con huevo - 11,00€</li>
+        <li>Milanesa pollo Napolitana - 13,00€</li>
+        <li>Milanesa ternera - 11,00€</li>
+        <li>Milanesa ternera Napolitana - 15,00€</li>
+        <li>Nuggets con patatas - 5,50€</li>
+        <li><em>*Incluye patatas y ensalada</em></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Postres</h2>
+      <ul>
+        <li>Tarta de Queso - 3,50€</li>
+        <li>Tarta de Chocolate - 3,80€</li>
+        <li>Coulant de chocolate - 4,50€</li>
+      </ul>
+    </section>
+
+    <p class="ofertas">🎉 Ofertas: ¡En la pizarra!</p>
   </div>
-  </footer>
-
-  <!-- Inclusión de Js Bootstrap -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-
-
-  <!-- Inclusión de Js personal -->
-  <script src="js/main.js"></script>
 </body>
-
 </html>
